@@ -1,46 +1,231 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" />
-    <script src="./scripts/set-theme.js"></script>
-  </head>
-  <body class="page">
-    <header class="header">
-      <nav class="theme-menu header__theme-menu">
-        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
-        <ul class="theme-menu__list">
-          <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
-              Темно
-            </button>
-          </li>
-          <li class="theme-menu__item">
-            <button
-              type="button"
-              data-theme="auto"
-              disabled
-              class="theme-menu__button"
-            >
-              Авто
-            </button>
-          </li>
-          <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
-              Светло
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main></main>
-    <script src="./scripts/like.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark">
+  <title>Закрывающий тег</title>
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./styles/globals.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/animations.css" />
+  <link rel="stylesheet" href="./styles/themes.css" />
+  <link rel="icon" href="./images/favicon.ico" />
+  <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
+  <script src="./scripts/set-theme.js"></script>
+</head>
+
+<body class="page">
+  <header class="header">
+    <a class="logo">&lt;/HTML&gt;</a>
+    <h1 class="title">закрывающий тег</h1>
+    <nav class="theme-menu header__theme-menu">
+      <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
+      <ul class="theme-menu__list">
+        <li class="theme-menu__item">
+          <button type="button" data-theme="dark" class="theme-menu__button button">
+            Темно
+          </button>
+        </li>
+        <li class="theme-menu__item">
+          <button type="button" data-theme="auto" disabled class="theme-menu__button button">
+            Авто
+          </button>
+        </li>
+        <li class="theme-menu__item">
+          <button type="button" data-theme="light" class="theme-menu__button button">
+            Светло
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <ul class="main__article-list">
+      <li>
+        <article class="article">
+          <h2 class="article__title">Фритрек и&nbsp;нулевой спринт: Подготовка к&nbsp;работе</h2>
+          <div class=text-transform: uppercase;
+  line-height: normal;"article__image-conteiner">
+            <span class="decor-text">&lt;/html&gt;</span>
+            <img class="image" src="./images/image.png" alt="Автобус">
+          </div>
+          <div class="article__text-conteiner">
+            <p class="text-style">Это было самое начало пути.&nbsp;На этом этапе важно было проникнуться основами и&nbsp;настроиться
+              на&nbsp;учёбу. И, возможно, подумать, как новые знания могут повлиять на&nbsp;ваше будущее.</p>
+            <p class="text-style">Место для ваших воспоминаний&nbsp;о начале обучения.</p>
+            <div class="article__button-conteiner">
+              <button class="button card__icon-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24" fill="none">
+                  <path d="M6 0H3V3H6V0Z" fill="black"/>
+                  <path d="M9 0H6V3H9V0Z" fill="black"/>
+                  <path d="M3 3H0V6H3V3Z" fill="black"/>
+                  <path d="M3 6H0V9H3V6Z" fill="black"/>
+                  <path d="M3 9H0V12H3V9Z" fill="black"/>
+                  <path d="M12 0H9V3H12V0Z" fill="black"/>
+                  <path d="M6 12H3V15H6V12Z" fill="black"/>
+                  <path d="M9 15H6V18H9V15Z" fill="black"/>
+                  <path d="M12 18H9V21H12V18Z" fill="black"/>
+                  <path d="M21 0H24V3H21V0Z" fill="black"/>
+                  <path d="M18 0H21V3H18V0Z" fill="black"/>
+                  <path d="M24 3H27V6H24V3Z" fill="black"/>
+                  <path d="M24 6H27V9H24V6Z" fill="black"/>
+                  <path d="M24 9H27V12H24V9Z" fill="black"/>
+                  <path d="M15 0H18V3H15V0Z" fill="black"/>
+                  <path d="M21 12H24V15H21V12Z" fill="black"/>
+                  <path d="M18 15H21V18H18V15Z" fill="black"/>
+                  <path d="M15 18H18V21H15V18Z" fill="black"/>
+                  <path d="M15 3H12V6H15V3Z" fill="black"/>
+                  <path d="M15 21H12V24H15V21Z" fill="black"/>
+                </svg>
+              </button>
+              <button class="button card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="article">
+          <h2 class="article__title">1&nbsp;спринт: Я&nbsp;&mdash; чистый лист</h2>
+          <div class="article__image-conteiner">
+            <span class="decor-text">&lt;/html&gt;</span>
+            <img class="image" src="./images/image.png" alt="Автобус">
+          </div>
+          <div class="article__text-conteiner">
+            <p>На&nbsp;первых этапах мы&nbsp;работали со&nbsp;страхами и&nbsp;сомнениями, которые часто испытывают
+              новички. Один из&nbsp;них&nbsp;&mdash; страх перед чистым листом. Это, конечно&nbsp;же, намного сложнее,
+              чем боязнь куска бумаги. Часто за&nbsp;этим ощущением скрываются более глубокие вопросы: с&nbsp;чего
+              начать? а&nbsp;вдруг будет слишком сложно? что, если я&nbsp;не&nbsp;справлюсь?</p>
+            <p>Место для ваших воспоминаний о начале первого спринта.</p>
+            <div class="button card__like-button">
+
+            </div>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="article">
+          <h2 class="article__title">1&nbsp;спринт: А&nbsp;если не&nbsp;получится?</h2>
+          <div class="article__image-conteiner">
+            <span class="decor-text">&lt;css&gt;</span>
+            <img class="image" src="./images/image.png" alt="Автобус">
+          </div>
+          <div class="article__text-conteiner">
+            <p>Первый проект&nbsp;&mdash; позади! Но&nbsp;это всё ещё самое начало пути. Радость могла быстро померкнуть
+              и&nbsp;смениться ожиданием провала. Или&nbsp;вы, наоборот, могли вдохновиться успехами и&nbsp;поверить
+              в&nbsp;себя.</p>
+            <p>Место для ваших воспоминаний об&nbsp;окончании первого спринта.</p>
+            <div class="button card__like-button">
+
+            </div>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="article">
+          <h2 class="article__title">2&nbsp;спринт: Погоня за&nbsp;идеалом</h2>
+          <div class="article__image-conteiner">
+            <span class="decor-text">&lt;desigions&gt;</span>
+            <img class="image" src="./images/image.png" alt="Автобус">
+          </div>
+          <div class="article__text-conteiner">
+            <p>На&nbsp;этом этапе вы&nbsp;уже достаточно разбирались в&nbsp;основах вёрстки, чтобы понять, как много ещё
+              впереди. Вы&nbsp;могли попытаться погнаться за&nbsp;идеалом и&nbsp;понять, что он&nbsp;недостижим. А,
+              может, вы&nbsp;вовсе и&nbsp;не&nbsp;подвержены перфекционизму и&nbsp;вместо того, чтобы сделать идеально,
+              старались просто сделать.</p>
+            <p>Место для ваших воспоминаний о&nbsp;начале второго спринта.</p>
+            <div class="button card__like-button">
+
+            </div>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="article">
+          <h2 class="article__title">2&nbsp;спринт: О&nbsp;тех, кто рядом</h2>
+          <div class="article__image-conteiner">
+            <span class="decor-text">care</span>
+            <img class="image" src="./images/image.png" alt="Автобус">
+          </div>
+          <div class="article__text-conteiner">
+            <p>Всё это время вы&nbsp;были не&nbsp;одиноки (хотя, возможно, иногда и&nbsp;чувствовали, что одни против
+              целого мира). Вас окружали одногруппники, команда сопровождения и&nbsp;просто близкие люди, которым можно
+              пожаловаться, если очередной макет просто так не&nbsp;поддавался. Осваивать что-то новое легче, когда
+              рядом есть единомышленники, не&nbsp;правда&nbsp;ли?</p>
+            <p>Место для ваших воспоминаний об&nbsp;окончании второго спринта.</p>
+            <div class="button card__like-button">
+
+            </div>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="article">
+          <h2 class="article__title">3&nbsp;спринт: Обходные стратегии</h2>
+          <div class="article__image-conteiner">
+            <span class="decor-text">&lt;support&gt;</span>
+            <img class="image" src="./images/image.png" alt="Автобус">
+          </div>
+          <div class="article__text-conteiner">
+            <p>На&nbsp;этом курсе вы&nbsp;постоянно решали разные задачи. В&nbsp;какой-то момент вам могло показаться,
+              что решения просто иссякли. Значит, пришло время посмотреть на&nbsp;задачу под другим углом.</p>
+            <p>Место для ваших воспоминаний о&nbsp;начале третьего спринта.</p>
+            <div class="button card__like-button">
+
+            </div>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="article">
+          <h2 class="article__title">3&nbsp;спринт: Когда опускаются руки</h2>
+          <div class="article__image-conteiner">
+            <span class="decor-text">&lt;lifes-style: none;&gt;</span>
+            <img class="image" src="./images/image.png" alt="Автобус">
+          </div>
+          <div class="article__text-conteiner">
+            <p>Во&nbsp;время учёбы часто возникает чувство, когда не&nbsp;знаешь, за&nbsp;что хвататься. Вроде
+              и&nbsp;проектную пора сдавать, и&nbsp;задачи хочется порешать, и&nbsp;в&nbsp;теории получше разобраться,
+              и&nbsp;жизнь не&nbsp;забыть пожить. В&nbsp;такие моменты очень нужна концентрация. Вспомните, откуда
+              вы&nbsp;её&nbsp;черпали.</p>
+            <p>Место для ваших воспоминаний об&nbsp;окончании третьего спринта.</p>
+            <div class="button card__like-button">
+
+            </div>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="article">
+          <h2 class="article__title">&laquo;Сейчас я&nbsp;здесь&raquo;</h2>
+          <div class="article__image-conteiner">
+            <span class="decor-text">&lt;experience&gt;</span>
+            <img class="image" src="./images/image.png" alt="Автобус">
+          </div>
+          <div class="article__text-conteiner">
+            <p>Сейчас вы&nbsp;уже очень много знаете о&nbsp;вёрстке. Но&nbsp;это только начало. Во-первых, впереди ещё
+              много материала про &laquo;красотищу&raquo;. Во-вторых, с&nbsp;окончанием курса учёба
+              не&nbsp;заканчивается. Вёрстка&nbsp;&mdash; это целый мир. И&nbsp;этот мир постоянно меняется. Познать его
+              полностью не&nbsp;получится, но&nbsp;это тот случай, когда важен сам процесс познания. Ведь часто
+              путь&nbsp;&mdash; и&nbsp;есть результат.</p>
+            <p>Место, чтобы остановиться, подумать и&nbsp;написать, что вы&nbsp;чувствуете в&nbsp;этой точке пути.</p>
+            <div class="button card__like-button">
+
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="./scripts/like.js"></script>
+</body>
+
 </html>
