@@ -2,14 +2,19 @@
 
 :root{
     --bg-color: #fff;
-    --bg-image: url(../images/background.png);
+    --bg-image: 
+        repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px ),
+        repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px ),
+        linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
     --main-color: #000;
     --main-font: "Inter-Variable";
+    --main-font-weight: 400;
+    --accent-font-weight: 700;
     --accent-font: "PressStart2P-Regular";
     --btn-color: #000;
     --btn-color-disabled: #00000060;
     --text-stroke-color: #fff;
     --heart-fill: #f00;
-    --main-textWeight: 400;
-    --accent-textWeight: 700;
+    /* --main-textWeight: 400;
+    --accent-textWeight: 700; */
 }

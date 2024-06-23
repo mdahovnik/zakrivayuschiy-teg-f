@@ -15,16 +15,15 @@
 */
 
 .page {
-
   min-inline-size: 320px;
   min-block-size: 100dvb;
   color: var(--main-color);
   font-family: var(--main-font);
-  font-variation-settings: "wght" var(--main-textWeight);
+  font-variation-settings: "wght" 400;
   background-color: var(--bg-color);
   background-image: var(--bg-image); /* lightgray 0% 0% / 50px 50px repeat, linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%); */
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   background-attachment: fixed; 
 }
 
@@ -43,19 +42,24 @@
   border: 2px solid var(--main-color);
   background-color: var(--bg-color);
   margin-block-start: 102px;
-  margin-block-end: 104px;
+  margin-block-end: 102px;
   max-inline-size: 696px;
 }
 
 .logo{
   padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
-  margin-block-end: 20px;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
 
 .title{
-  margin-block-end: 25px;
+  /* margin-block-end: 25px; */
+  padding-block-start: 20px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+}
+
+.theme-menu{
+
+  padding-block: 25px;
 }
 
 .theme-menu__list{
@@ -63,13 +67,14 @@
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-  gap: 14px;
-  margin-block-end: 25px;
+  gap: 11px;
+  padding-inline-start: 20px;
 }
 
 .button {
   background-color: transparent;
   border: none;
+  /* font-size: 14px; */
 } 
 
 .theme-menu__button {
@@ -113,23 +118,27 @@
 
 .article__title{
   font-size: 18px;
-  font-variation-settings: "wght" var(--accent-textWeight);
+  font-variation-settings: "wght" var(--accent-font-weight);
   line-height: normal;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
+  padding: 3px 24px 3px 10px;
+  border-bottom: 2px solid var(--main-color);
 }
 
 .article__text-conteiner{
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 27px;
   padding: 25px;
   color: var(--main-color);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+    border-top: 2px solid var(--main-color);
 }
 
 .text-style {
+  font-variation-settings: "wght" var(--main-font-weight);
   line-height: 117%;
 }
 
@@ -142,6 +151,7 @@
   gap: 12px;
   align-items: center;
   justify-content: end ;
+  margin: 0 25px 25px;
 }
 
 .card__icon-button {
@@ -189,6 +199,6 @@
   block-size: 100%;
   object-fit: cover;
   object-position: center;
-  border-top: 2px solid var(--main-color);
-  border-bottom: 2px solid var(--main-color);
+  /* border-top: 2px solid var(--main-color); */
+  /* border-bottom: 2px solid var(--main-color); */
 }
