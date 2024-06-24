@@ -9,12 +9,12 @@
     --main-color: #000;
     --main-font: "Inter-Variable";
     --main-font-weight: 400;
-    --accent-font-weight: 700;
     --accent-font: "PressStart2P-Regular";
+    --accent-font-weight: 700;
     --btn-color: #000;
     --btn-color-disabled: #00000060;
-    --text-stroke-color: #fff;
-    --heart-fill: #f00;
-    /* --main-textWeight: 400;
-    --accent-textWeight: 700; */
+    --stroke-color: #fff;
+    --mix-blend-color: #fff;
+    /* --heart-fill: #f00; */
+    /* --label-shadow: #fff; */
 }

@@ -14,11 +14,13 @@
     --main-color: #000;
     --main-font: "Inter-Variable";
     --main-font-weight: 400;
-    --accent-font-weight: 700;
     --accent-font: "PressStart2P-Regular";
+    --accent-font-weight: 700;
     --btn-color: #000;
     --btn-color-disabled: #00000060;
-    --text-stroke-color: #fff;
+    --stroke-color: #fff;
+    --mix-blend-color: #fff;
+    /* --label-shadow: #fff; */
 }
 
 :root.theme-dark{
@@ -30,11 +32,13 @@
     --main-color: #00CC14;
     --main-font: "Inter-Variable";
     --main-font-weight: 465;
-    --accent-font-weight: 785;
     --accent-font: "PressStart2P-Regular";
+    --accent-font-weight: 785;
     --btn-color: #00CC14;
     --btn-color-disabled: #00CC1460;
-    --text-stroke-color: #000;
+    --stroke-color: #000;
+    --mix-blend-color: #00CC14;
+    /* --label-shadow: #000; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,6 +56,8 @@
         --accent-font: "PressStart2P-Regular";
         --btn-color: #00CC14;
         --btn-color-disabled: #00CC1460;
-        --text-stroke-color: #000;
+        --stroke-color: #000;
+        --mix-blend-color: #00CC14;
+        /* --label-shadow: #000; */
     }
   }
