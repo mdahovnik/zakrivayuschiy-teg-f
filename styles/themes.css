@@ -24,7 +24,7 @@
     /* --label-shadow: #fff; */
 }
 
-:root.theme-dark{
+:root.theme-dark {
     --bg-color: #000;
     --bg-image: 
         repeating-linear-gradient(to left, #000 0 2px, transparent 2px 4px ),

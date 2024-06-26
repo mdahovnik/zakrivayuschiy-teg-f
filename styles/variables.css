@@ -1,6 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
-:root{
+:root {
     --bg-color: #fff;
     --bg-image: 
         repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px ),
