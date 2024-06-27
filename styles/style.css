@@ -32,9 +32,7 @@
   align-items: center;
   margin-inline: auto;
   font-family: var(--accent-font), monospace;
-  font-style: normal;
   font-size: 14px;
-  line-height: normal;
   text-transform: uppercase;
   color: currentColor;
   border: 2px solid currentColor;
@@ -74,7 +72,6 @@
 .theme-menu__button {
   position: relative;
   text-transform: uppercase;
-  line-height: normal;
   transition: opacity 0.3s ease;
 }
 
@@ -139,7 +136,7 @@
   font-variation-settings: "wght" var(--accent-font-weight);
   line-height: normal;
   padding: 3px 24px 3px 10px;
-  
+  border-bottom: 2px solid currentColor;
 }
 
 .article__image-conteiner {
@@ -152,8 +149,7 @@
   gap: 27px;
   padding: 25px;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
+  border-top: 2px solid currentColor;
 }
 
 .text-style {
@@ -192,8 +188,6 @@
   position: relative;
   inline-size: 130px;
   border: 2px solid currentColor;
-  font-family: var(--accent-font), monospace;
-  font-size: 14px;
   padding: 10px 17px;
 }
 
@@ -214,8 +208,6 @@
   display: block;
   font-family: var(--accent-font), monospace;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 90%;
   color: var(--mix-blend-color);
   mix-blend-mode: difference;
@@ -229,7 +221,6 @@
   color: var(--main-color);
   font-family: var(--accent-font), monospace;
   font-size: 14px;
-  line-height: normal;
   text-transform: lowercase;
   text-shadow: 0 0 3px var(--stroke-color);
   mix-blend-mode: hard-light;
@@ -256,8 +247,6 @@ or (-webkit-text-stroke: 1px var(--stroke-color)) {
   block-size: 100%;
   object-fit: cover;
   object-position: center;
-  border-top: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
 }
 
 .footer {
@@ -299,7 +288,7 @@ or (-webkit-text-stroke: 1px var(--stroke-color)) {
   inline-size: 29px;
 }
 
-.anime::before {
+.animated::before {
   content: '';
   position: absolute;
   display: block;
@@ -312,7 +301,7 @@ or (-webkit-text-stroke: 1px var(--stroke-color)) {
   transform: scaleX(0);
 } 
 
-.anime:hover::before {
+.animated:hover::before {
   transform: scale(1);
 }
 
@@ -395,6 +384,7 @@ or (-webkit-text-stroke: 1px var(--stroke-color)) {
 .triple-filter {
   filter: invert(120%) hue-rotate(180deg) sepia(30%);
 }
+
 
 @media (width >= 696px) {
 

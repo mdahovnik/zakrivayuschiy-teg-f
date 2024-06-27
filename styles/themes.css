@@ -21,7 +21,6 @@
     --stroke-color: #fff;
     --mix-blend-color: #fff;
     --heart-fill: #f00;
-    /* --label-shadow: #fff; */
 }
 
 :root.theme-dark {
@@ -39,7 +38,7 @@
     --btn-color-disabled: #00CC1460;
     --stroke-color: #000;
     --mix-blend-color: #00CC14;
-    /* --label-shadow: #000; */
+    --heart-fill: #f00;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -59,6 +58,6 @@
         --btn-color-disabled: #00CC1460;
         --stroke-color: #000;
         --mix-blend-color: #00CC14;
-        /* --label-shadow: #000; */
+        --heart-fill: #f00;
     }
   }
