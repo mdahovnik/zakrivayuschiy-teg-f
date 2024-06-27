@@ -19,6 +19,10 @@
   transition: fill 0.3s 0.03s linear;
 }
 
+.sparks {
+  opacity: 0;
+}
+
 .like-icon:hover .core {
   fill: var(--main-color);
   transition: fill 0.3s linear;
