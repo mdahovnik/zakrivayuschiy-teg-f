@@ -288,7 +288,7 @@ or (-webkit-text-stroke: 1px var(--stroke-color)) {
   transform: scale(1);
 }
 
-.dialog{
+.dialog {
   min-inline-size: 341px;
   padding: 30px 42px;
   border: 2px solid var(--main-color);
@@ -385,7 +385,7 @@ or (-webkit-text-stroke: 1px var(--stroke-color)) {
     inset-inline-end: 25px;
   }
 
-  .dialog{
+  .dialog {
     max-inline-size: 355px;
     padding: 30px;
   }
