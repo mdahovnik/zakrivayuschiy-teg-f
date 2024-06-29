@@ -55,12 +55,17 @@
 
 .like-icon.is-liked .main-body {
   fill: var(--heart-fill);
-  transition: fill 0.3s 0.02s linear;
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon .contour {
+  fill: var(--main-color);
+  transition: fill 0.1s linear;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--heart-fill);
-  transition: fill 0.3s 0.05s linear;
+  transition: fill 0.3s 0.06s linear;
 }
 
 .like-icon.is-liked .heart {

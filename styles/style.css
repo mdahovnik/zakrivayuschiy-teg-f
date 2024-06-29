@@ -19,7 +19,7 @@
   min-block-size: 100dvb;
   color: var(--main-color);
   font-family: var(--main-font), monospace;
-  font-variation-settings: "wght" 400;
+  font-variation-settings: "wght" var(--main-font-weight);
   background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-size: cover;
@@ -66,13 +66,28 @@
 
 .button {
   background-color: transparent;
-  border: none;
+  transition: box-shadow 0.3s ease;
 } 
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px var(--main-color);
+}
 
 .theme-menu__button {
   position: relative;
+  border: none;
+  background-color: transparent;
   text-transform: uppercase;
   transition: opacity 0.3s ease;
+  padding: 1px 0;
 }
 
 .theme-menu__button:hover {
@@ -93,7 +108,7 @@
 .theme-menu__button:disabled::before {
   content: '▶';
   position: absolute;
-  inset-inline-start: -12px;
+  inset-inline-start: -19px;
   animation: moveX 0.5s ease-in-out alternate infinite;
 }
 
@@ -108,7 +123,7 @@
   opacity: 0.6;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s ease ;
+  transition: transform 0.3s ease;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -160,6 +175,7 @@
 .article__button-conteiner {
   display: flex;
   gap: 5px;
+  block-size: 38px;
   align-items: center;
   justify-content: end ;
   margin: 0 25px 25px;
@@ -169,39 +185,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 35px;
+  block-size: 100%;
   padding: 0;
   border: 2px solid transparent;
   cursor: pointer;
-}
-
-.card__icon-button:focus {
   outline: none;
+  background-color: transparent;
+  transition: border-color 0.3s ease;
 }
 
 .card__icon-button:focus-visible {
   border-color: currentColor;
-  transition: border-color 0.3s ease;
 } 
 
 .card__like-button {
   position: relative;
   inline-size: 130px;
+  block-size: 100%;
   border: 2px solid currentColor;
   padding: 10px 17px;
-}
-
-.card__like-button:hover {
-  cursor: pointer;
-}
-
-.card__like-button:focus {
-  outline: none;
-}
-
-.card__like-button:focus-visible {
-  box-shadow: 2px 2px currentColor;
-  transition: box-shadow 0.3s ease;
 }
 
 .button__text {
@@ -249,11 +251,6 @@ or (-webkit-text-stroke: 1px var(--stroke-color)) {
   object-position: center;
 }
 
-.footer {
-  max-inline-size: 700px;
-  margin: auto;
-}
-
 .save-button {
   position: relative;
   display: flex;
@@ -261,27 +258,13 @@ or (-webkit-text-stroke: 1px var(--stroke-color)) {
   gap: 8px;
   align-items: center;
   justify-items: center;
-  inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
-  margin: 54px auto 102px;
+  margin: 52px auto 102px;
   padding: 15px 18px;
   border: 2px solid currentColor;
   background-color: var(--bg-color);
 }
 
-.save-button:hover {
-  cursor: pointer;
-}
-
-.save-button:focus {
-  outline: none;
-}
-
-.save-button:focus-visible {
-  box-shadow: 2px 2px currentColor;
-  transition: box-shadow 0.3s ease;
-}
-
-.footer__floppy-image {
+.floppy-image {
   fill: var(--mix-blend-color);
   mix-blend-mode: difference;
   block-size: 29px;
@@ -305,19 +288,22 @@ or (-webkit-text-stroke: 1px var(--stroke-color)) {
   transform: scale(1);
 }
 
-.dialog[open] {
-  display: grid;
-  grid-template-rows: repeat(2, min-content);
-  gap: 30px;
-  inline-size: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
-  padding: 32px 42px;
+.dialog{
+  min-inline-size: 341px;
+  padding: 30px 42px;
   border: 2px solid var(--main-color);
   background-color: var(--bg-color);
 }
 
+.dialog[open] {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  gap: 30px;
+}
+
 .modal-text {
   display: flex;
-  gap: 20px;
+  gap: 16px;
   align-items: center;
 }
 
@@ -325,8 +311,6 @@ or (-webkit-text-stroke: 1px var(--stroke-color)) {
   color: var(--main-color);
   font-family: var(--accent-font), monospace;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 150%;
   text-transform: uppercase;
 } 
@@ -346,7 +330,7 @@ or (-webkit-text-stroke: 1px var(--stroke-color)) {
   text-transform: uppercase;
 }
 
-.dialog__floppy-image {
+.floppy-image_dialog {
   inline-size: 39px;
   block-size: 39px;
   flex-shrink: 0;
@@ -386,18 +370,23 @@ or (-webkit-text-stroke: 1px var(--stroke-color)) {
 }
 
 
-@media (width >= 696px) {
+@media (width >= 376px) {
 
   .save-button {
     flex-direction: row;
   }
 
-  .footer__floppy-image {
+  .floppy-image {
     block-size: 21px;
     inline-size: 21px;
   }
 
   .label {
     inset-inline-end: 25px;
+  }
+
+  .dialog{
+    max-inline-size: 355px;
+    padding: 30px;
   }
 }
