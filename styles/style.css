@@ -265,10 +265,10 @@ or (-webkit-text-stroke: 1px var(--stroke-color)) {
 }
 
 .floppy-image {
-  fill: var(--mix-blend-color);
-  mix-blend-mode: difference;
   block-size: 29px;
   inline-size: 29px;
+  fill: var(--mix-blend-color);
+  mix-blend-mode: difference;
 }
 
 .animated::before {
